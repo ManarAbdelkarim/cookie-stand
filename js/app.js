@@ -2,6 +2,8 @@
 let locations = ['Seattle','Tokyo','Dubai','Paris','Lima'];
 let workingHours = ["6am", "7am", "8am", "9am", "10am", "11am", "12pm", "1pm", "2pm", "3pm", "4pm", "5pm", "6pm", "7pm"];
 let brandishes =  [];
+let minWorks = [23,3,11,20,2];
+let maxWork = [65,24,38,38,16];
 function generateObjects() {
   let work = [];
 
@@ -10,23 +12,21 @@ function generateObjects() {
         {
           location: locations[index],
           working:generateNumber(work)[0],
-          minWork :generateNumber(work)[1],
-          maxWork :generateNumber(work)[2],
-          averageWork :generateNumber(work)[3] ,
-          total: generateNumber(work)[4]
+          minWork :minWorks[index],
+          maxWork :maxWork[index],
+          averageWork :generateNumber(work)[1] ,
+          total: generateNumber(work)[2]
         };
   }
   function generateNumber (working) {
-
-    for (let index = 0; index < workingHours.length; index++) {
-      working[index]= Math.floor(Math.random() * 100) + 1;
+    for (let i = 0; i < locations.length; i++) {
+      for (let index = 0; index < workingHours.length; index++) {
+        working[index]= Math.floor(Math.random()*(maxWork[i]- minWorks[i]) + minWorks[i]);
+      }
     }
-
-    let minWork = Math.min(...working);
-    let maxWork = Math.max(...working);
     let averageWork = ((working.reduce((a, b) => a + b, 0))/working.length);
     let totals = working.reduce((a, b) => a + b, 0);
-    return [working,minWork,maxWork,averageWork,totals];
+    return [working,averageWork,totals];
   }
 }
 
@@ -43,8 +43,8 @@ function createList() {
     liEl = document.createElement('li');
     liEl.textContent = locations[i];
     unOrderEL.appendChild(liEl);
-    for (let index = 0; index < workingHours.length ; index++) {
-      if (index !== workingHours.length-1) {
+    for (let index = 0; index <= workingHours.length ; index++) {
+      if (index !== workingHours.length) {
         liEl = document.createElement('li');
         liEl.textContent = workingHours[index]+':'+brandishes[i].working[index]+ ' cookies';
         unOrderEL.appendChild(liEl);
@@ -95,7 +95,7 @@ function createTable() {
     tdEl.textContent = brandishes[index].maxWork;
     trEl.appendChild(tdEl);
     tdEl = document.createElement('td');
-    tdEl.textContent = brandishes[index].averageWork;
+    tdEl.textContent = Math.round(brandishes[index].averageWork * 10) / 10;
     trEl.appendChild(tdEl);
   }
 }
