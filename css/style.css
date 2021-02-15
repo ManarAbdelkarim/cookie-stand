@@ -95,6 +95,8 @@ header{
 
 main{
     background-color: aliceblue;
+    margin-left: 23%;
+
 }
 .wrapper {
     min-height: 100%;
@@ -112,17 +114,36 @@ main{
 
   }
 
-  ul li:first-child{
-     font-weight: bold;
-     color:saddlebrown;
-     list-style:none;
-     margin-left: 24%;
-  }
 
-  ul {
-      float: left;
+  ul{
+float: left;
+margin-left:3%;
+
+  }
+  li:first-child{
+      margin-left: 25%;
+      color: saddlebrown;
+      font-weight: bold;
   }
 
   table{
       clear: both;
+      
+  }
+
+   td, th {
+    border: 1px solid #ddd;
+    padding: 8px;
+  }
+  
+   tr:nth-child(even){background-color: #f2f2f2;}
+  
+  tr:hover {background-color: #ddd;}
+  
+  th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color:saddlebrown;
+    color: white;
   }
