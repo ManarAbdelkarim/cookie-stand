@@ -1,0 +1,113 @@
+header{
+    background-position: left;
+   
+}
+
+#wheelShip{
+    width: 18%;
+}
+#wood{
+    background-image: url(../img/underTheSea-crop.png);
+    height: 269px;
+    margin-left: 2%;
+    margin-right: 2%;
+}
+
+
+.beforeHeader{
+   
+    height: 55px;
+    background-image: url(../img/headerWood.png);
+    margin-left: 6%;
+    margin-right: 6%;
+}
+
+.beforeHeader:first-child {
+    margin-top: 3%;
+  }
+
+
+#ocean{
+    transform: rotate( 
+        226deg
+         );
+            width: 81%;
+            height: auto;
+            top: 108px;
+            left: -915px;
+            position: absolute;
+            border-radius: 20px;
+
+}
+
+
+#title{
+
+    margin-left: 14%;
+    position: absolute;
+    top: 146px;
+    left: 296px;
+    font-size: xxx-large;
+    color: darkgray;
+}
+.salmon{
+
+    position: absolute;
+    top: 142px;
+    width: 12%;
+    left: 64px;
+}
+
+.salmon:first-child{
+
+    position: absolute;
+    top: 67px;
+    left: 286px;
+    transform: skewY(
+22deg
+);
+    width: 8%;
+}
+.topnav {
+    overflow: hidden;
+    background-color: #333;
+    margin-left: 2%;
+    margin-right: 2%;
+    height: max-content;
+  }
+  
+  .topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 20px;
+  }
+  
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+
+
+
+main{
+    background-color: aliceblue;
+}
+.wrapper {
+    min-height: 100%;
+    margin-bottom: -50px;
+  }
+  footer{
+    height: 33px;
+   background-color: #333;
+    background-size: 1903px 98px;
+    background-repeat: no-repeat;
+    height: 98px;
+    background-color: #cccccc;
+    margin-top: 49px;
+    opacity: 0.5;
+
+  }
