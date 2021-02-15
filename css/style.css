@@ -111,3 +111,18 @@ main{
     opacity: 0.5;
 
   }
+
+  ul li:first-child{
+     font-weight: bold;
+     color:saddlebrown;
+     list-style:none;
+     margin-left: 24%;
+  }
+
+  ul {
+      float: left;
+  }
+
+  table{
+      clear: both;
+  }
