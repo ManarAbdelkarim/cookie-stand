@@ -7,6 +7,11 @@ header{
    
 }
 
+#table tr:nth-child(odd) 
+{
+  background: #FFF
+}
+
 #wheelShip{
     width: 18%;
 }
@@ -117,34 +122,36 @@ width: 100%;
     color: black;
   }
   
-
-
-
 main{
     background-color: aliceblue;
     /* margin-left: 23%; */
-
+  width: 100%;
 }
 .wrapper {
     min-height: 100%;
     margin-bottom: -50px;
   }
   footer{
-    height: 33px;
-   background-color: #333;
-    background-size: 1903px 98px;
-    background-repeat: no-repeat;
+    clear: both;
     height: 98px;
     background-color: #cccccc;
     margin-top: 49px;
     opacity: 0.5;
+   
+}
 
-  }
 
+
+  /* ul:nth-child(4n){
+
+    list-style: none;
+  } */
 
   ul{
-float: left;
-margin-left:3%;
+    float: left;
+    margin-left: 6%;
+    line-height: 1.6;
+    border: #b0adad solid;
 
   }
   li:first-child{
@@ -155,7 +162,12 @@ margin-left:3%;
 
   table{
       clear: both;
-      
+      margin: 0 auto;
+  }
+
+  #list {
+    margin: 0 auto;
+    width: 95%;
   }
 
    td, th {
@@ -173,4 +185,35 @@ margin-left:3%;
     text-align: left;
     background-color:saddlebrown;
     color: white;
+  }
+
+  input:invalid{
+
+    border-color: red;
+    background-color: pink;
+  }
+
+
+section{
+  width: 100%;
+  margin-top: 2%;
+}
+
+  form{
+    margin: 2% auto 0 auto;
+    width: 28%;
+    background-color: #fefbf6;
+  }
+
+  input[type=submit]{
+    font-weight: 800;
+    margin: 1% auto auto 41%;
+  }
+
+  form div{
+    margin-top: 1%;
+  }
+
+  ul:hover{
+    border-color: saddlebrown;
   }
