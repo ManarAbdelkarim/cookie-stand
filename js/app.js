@@ -104,7 +104,6 @@ let totalByTime = [];
 // }
 
   function generateLabTableFooter(){
-debugger;
   trEl = document.createElement('tr');
   tableEl.appendChild(trEl);
   thEl = document.createElement('th');
@@ -153,7 +152,6 @@ debugger;
 
 
  Stores.prototype.generateWorking = function(){
-  debugger;
   for (let index = 0; index < workingHours.length; index++) {
     this.working[index]= Math.floor(this.averageWork * this.customers[index]);
   }
@@ -269,12 +267,12 @@ generateLabTableFooter();
 }
  fillPage();
 
- function removeAllChildNodes(parent) {
-   debugger;
-  while (parent.firstChild) {
-      parent.removeChild(parent.firstChild);
-  }
-}
+//  function removeAllChildNodes(parent) {
+//    debugger;
+//   while (parent.firstChild) {
+//       parent.removeChild(parent.firstChild);
+//   }
+// }
 
 
 // function appendRow(location,min,max,average){
@@ -303,7 +301,6 @@ generateLabTableFooter();
 
 const form = document.getElementById('cookie-form');
 form.addEventListener('submit', function(event){
-  debugger;
    event.preventDefault();
   console.log(event.target);
   let location = event.target.location.value;

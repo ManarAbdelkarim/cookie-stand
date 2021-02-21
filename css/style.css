@@ -1,9 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Piedra&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pangolin&display=swap');
+
 *{
   box-sizing: border-box;
+}
+body{
+  background-color: aliceblue;
 }
 
 header{
     background-position: left;
+    width: 100%;
    
 }
 
@@ -23,13 +31,46 @@ header{
 }
 
 #shirt{
-  padding-left: 60%;
+  position: absolute;
+  width: 45%;
+  left: 50%;
+  top: 15%;
+  -webkit-transform: rotate(
+-10deg
+);
 }
+
 
 #fish{
   position: absolute;
     right: 0;
 }
+
+#family{
+  float: right;
+  width: 50%;
+}
+
+.ourStory p{
+
+  width: 29%;
+  height: fit-content;
+  font-size: x-large;
+}
+
+#ourStory{
+  margin: 0 auto;
+  width: 60%;
+  background: ghostwhite;
+  background-size: cover;
+  height: 429px;
+  border-radius: 3%;
+  padding: 3%;
+  padding-bottom: 20%;
+  position: relative;
+  border: 1px solid #deb88733;
+}
+
 span img{
   width: 228px;
  height: 152px;
@@ -42,9 +83,144 @@ span{
 #USA{
   width: 76%;
 }
+.info{
+  width: 100%;
+}
+#info{
+  width: max-content;
+  margin: 0 auto;
+  background-color: ghostwhite;
+  border: 10px solid transparent;
+  border-image:url('../img/headerWood.png')  1 round;
+  padding-top: 0%;
+  border-radius: 3%;
+  padding: 1%;
+}
+#info p{
+  text-align: center;
+  font-size: x-large;
 
-#branches div {
-width: 100%;
+}
+.products{
+  width: 60%;
+  margin: 0 auto;
+}
+
+#products{
+  width: 50%;
+  /* margin: 0 auto; */
+  padding-left: 2%;
+  background-color: ghostwhite;
+  display: inline-block;
+  padding-top: 4%;
+  /* border: 1px solid #deb88733; */
+  margin-right: 5%;
+  border-radius: 3%;
+}
+#products > span{
+  display: inline-block;
+  width: 100%;
+  margin: 0 auto;
+}
+#love > span{
+  display: inline-block;
+  width: 100%;
+  margin: 9% auto 3% auto;
+}
+
+#love{
+  width: 44%;
+  /* margin: 0 auto; */
+  padding-left: 2%;
+  background-color: ghostwhite;
+  display: inline-block;
+  border: 1px solid #deb88733;
+  border-radius: 3%;
+}
+#love img{
+  width: 300px;
+  height: 300px;
+  padding-right: 9%;
+}
+
+#love h4{
+  margin: 28% 4% 2% 2%;
+}
+#products div{
+  background-image: url(../img/headerWood.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+  background-size: cover;
+  border-radius: 50%;
+}
+
+.products img:hover{
+  opacity: 0.7;
+}
+
+.products h3{
+  font-family: 'Pangolin', cursive;
+  text-align: center;
+  font-size: x-large;
+  font-weight: 800;
+  margin: 6% ;
+  text-transform: capitalize;
+}
+
+#products h4 , #love h4{
+  float: right;
+  margin: 19% 3% 2% 2%;
+  font-family:sans-serif;
+}
+
+
+
+#products img{
+  width: 270px;
+  height: 100px;
+  /* border-radius: 50%; */
+  padding-bottom: 8%;
+  margin: 10% auto;
+  padding: 0 9%;
+}
+
+
+
+.branches{
+  clear: both;
+  width: 100%;
+}
+.branches {
+width: 90%;
+background-color: ghostwhite;
+margin: 0px auto 5% auto;
+border: 1px solid #deb88733;
+border-radius: 3%;
+
+
+}
+
+#branches{
+      margin: 2%;
+}
+#branches > div{
+  padding: 3%;
+}
+
+#branches h2{
+  margin: 0 auto;
+    width: max-content;
+}
+#branches h4{
+  font-family: 'Pangolin';
+  font-weight: bold;
+}
+
+.vl {
+  border-left: 6px solid rgb(233 233 233 / 15%);
+  height: 153px;
+  display: inline-block;
 }
 .beforeHeader{
    
@@ -52,6 +228,7 @@ width: 100%;
     background-image: url(../img/headerWood.png);
     margin-left: 6%;
     margin-right: 6%;
+    
 }
 
 .beforeHeader:first-child {
@@ -75,30 +252,32 @@ width: 100%;
 
 #title{
 
-    margin-left: 14%;
-    position: absolute;
-    top: 146px;
-    left: 296px;
-    font-size: xxx-large;
-    color: darkgray;
+  margin-left: 14%;
+  position: absolute;
+  top: 146px;
+  left: 296px;
+  font-size: 350%;
+  color: #e5f1ff;
+  font-family: 'Pangolin', cursive;
+  text-transform: uppercase;
 }
 .salmon{
-
-    position: absolute;
-    top: 142px;
-    width: 12%;
-    left: 64px;
+  position: absolute;
+  top: 12%;
+  width: 12%;
+  left: 1%;
 }
+
 
 .salmon:first-child{
 
-    position: absolute;
-    top: 67px;
-    left: 286px;
-    transform: skewY(
+  position: absolute;
+  top: 7%;
+  left: 15%;
+  transform: skewY( 
 22deg
 );
-    width: 8%;
+  width: 8%;
 }
 .topnav {
     overflow: hidden;
@@ -123,7 +302,7 @@ width: 100%;
   }
   
 main{
-    background-color: aliceblue;
+  
     /* margin-left: 23%; */
   width: 100%;
 }
@@ -133,14 +312,38 @@ main{
   }
   footer{
     clear: both;
-    height: 98px;
-    background-color: #cccccc;
+    width: 100%;
+    background-image: url(../img/underTheSea-crop.png);
+    background-size: cover;
+    background-repeat: no-repeat;
     margin-top: 49px;
-    opacity: 0.5;
+    color: #e5f1ff !important;
+    text-align: center;
+    position: relative;
+    padding: 3%;
    
 }
 
+footer a , footer h5 ,footer h4 , footer p {
+  text-decoration: none;
+  color: #e5f1ff;
+  margin-top: 1%;
+  line-height: 1.2;
+}
 
+
+footer h4{
+  text-transform: uppercase;
+}
+footer>div{
+  width:9%;
+  margin: 0 auto;
+}
+
+footer>div h5 , footer>div a{
+margin: 1% auto;
+
+}
 
   /* ul:nth-child(4n){
 
@@ -216,4 +419,39 @@ section{
 
   ul:hover{
     border-color: saddlebrown;
+  }
+
+  hr{
+    margin: 5% auto;
+    background-color: #c5c9c8;
+    border: none;
+    height: 0.5px;
+    width: 80%;
+    box-shadow:#b0adad;
+  }
+
+  p{
+    font-family: serif;
+  }
+
+  h2 {
+    font-size: xxx-large;
+    text-shadow: 1px 4px burlywood;
+    margin-bottom: 2%;
+    font-weight: bolder;
+    text-align: center;
+    display: inline-block;
+  }
+  h4{
+    font-size: x-large;
+    text-align: center;
+    margin: 2% 1% 2% 2%;
+  }
+
+  footer img{
+    /* float: right; */
+    width: 30%;
+  }
+  footer div{
+    width:max-content;
   }
